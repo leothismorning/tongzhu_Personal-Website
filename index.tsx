@@ -304,7 +304,7 @@ const App = () => {
       </section>
 
       {/* 3. Categorized Career Timeline */}
-      <section id="experience" className="bg-zinc-50 py-24 border-y border-zinc-100">
+      <section id="experience" className="bg-zinc-50 py-2 border-y border-zinc-100">
         <div className="max-w-6xl mx-auto px-6">
           <div className="mb-16">
             <span className="text-blue-600 font-black uppercase tracking-widest text-[10px]">Academic & Professional</span>
