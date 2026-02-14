@@ -1,0 +1,8 @@
+{
+  "description": "A high-end Human-Computer Interaction portfolio featuring interactive project cards and video showcases.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ],
+  "name": "Copy of tongzhu cv"
+}
