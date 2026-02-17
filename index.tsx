@@ -16,7 +16,8 @@ import {
   HeartPulse,
   Briefcase,
   Layers,
-  Sparkles
+  Sparkles,
+  Rocket
 } from 'lucide-react';
 
 // --- Types ---
@@ -66,7 +67,7 @@ const PROJECTS: Project[] = [
   },
     {
     id: 'tsinghua-robot',
-    title: 'Emotional-Transmission Robot',
+    title: 'Cupid-Echo:an inflatable shape changing interface',
     category: 'Tsinghua Future Lab',
     description: 'Developing deformable robot trained ML models to identify haptic emotional semantics by analyzing user tactile expressions.',
     thumbnail: 'https://pub-44bbe4813e3c492a92c15ad2f4fccbd0.r2.dev/cupid-echo.png',
@@ -74,15 +75,25 @@ const PROJECTS: Project[] = [
     icon: <HeartPulse className="w-6 h-6" />,
     tags: ['Machine Learning', 'Haptics', 'Robotics', 'Affective Computing']
   },
-  {
-    id: 'spatial-ui',
-    title: 'Stylized Rendering',
-    category: 'Computer Graphics',
-    description: 'Implementation of High-Efficiency Environment Material Solvers and Stylized Shading Schemes in Unreal Engine Based on Non-Photorealistic Rendering (NPR) Theory.',
-    thumbnail: 'https://pub-44bbe4813e3c492a92c15ad2f4fccbd0.r2.dev/%E9%A3%8E%E6%A0%BC%E5%8C%96%E6%B8%B2%E6%9F%93%E4%BD%9C%E5%93%81%E9%A6%96%E9%A1%B5.png',
-    videoUrl: 'https://youtu.be/ORYwJk3aFtM',
-    icon: <Layers className="w-6 h-6" />,
-    tags: ['NPR', 'Shaders', 'HLSL', 'Art Direction']
+    {
+    id: 'hku-archaeology',
+    title: 'Virtual-archaeology Game(In Development)',
+    category: 'HKU Faculty of Education',
+    description: 'Leveraging virtual environments to scaffold inquiry-based learning and complex archaeological reasoning.',
+    thumbnail: 'https://pub-44bbe4813e3c492a92c15ad2f4fccbd0.r2.dev/virtual-archaeology.png',
+    videoUrl: 'https://youtu.be/i53mVLwh_T0',
+    icon: <BookOpen className="w-6 h-6" />,
+    tags: ['EdTech', 'Educational Games', 'Spatial Computing', 'Pedagogy']
+  },
+    {
+    id: 'serious-space',
+    title: 'Serious Space',
+    category: 'Research Concept',
+    description: 'Materialised Panopticism theory into an interactive installation using CV and multimodal systems to provoke critical reflection on digital surveillance and privacy.',
+    thumbnail: 'https://pub-44bbe4813e3c492a92c15ad2f4fccbd0.r2.dev/serious%20space.png',
+    videoUrl: 'https://leothismorning.github.io/ztcv/seriousspace.pdf',
+    icon: <Rocket className="w-6 h-6" />,
+    tags: ['Serious Games', 'Multimodal System', 'Interactive Art Installation']
   },
   {
     id: 'learning-analytics',
@@ -94,15 +105,15 @@ const PROJECTS: Project[] = [
     icon: <Sparkles className="w-6 h-6" />,
     tags: ['Data Science', 'EdTech', 'HCI', 'Visualization']
   },
-    {
-    id: 'hku-archaeology',
-    title: 'Virtual-archaeology Game(In Development)',
-    category: 'HKU Faculty of Education',
-    description: 'Leveraging virtual environments to scaffold inquiry-based learning and complex archaeological reasoning.',
-    thumbnail: 'https://pub-44bbe4813e3c492a92c15ad2f4fccbd0.r2.dev/virtual-archaeology.png',
-    videoUrl: 'https://youtu.be/i53mVLwh_T0',
-    icon: <BookOpen className="w-6 h-6" />,
-    tags: ['EdTech', 'Educational Games', 'Spatial Computing', 'Pedagogy']
+  {
+    id: 'spatial-ui',
+    title: 'Stylized Rendering',
+    category: 'Computer Graphics',
+    description: 'Implementation of High-Efficiency Environment Material Solvers and Stylized Shading Schemes in Unreal Engine Based on Non-Photorealistic Rendering (NPR) Theory.',
+    thumbnail: 'https://pub-44bbe4813e3c492a92c15ad2f4fccbd0.r2.dev/%E9%A3%8E%E6%A0%BC%E5%8C%96%E6%B8%B2%E6%9F%93%E4%BD%9C%E5%93%81%E9%A6%96%E9%A1%B5.png',
+    videoUrl: 'https://youtu.be/ORYwJk3aFtM',
+    icon: <Layers className="w-6 h-6" />,
+    tags: ['NPR', 'Shaders', 'HLSL', 'Art Direction']
   }
 ];
 
