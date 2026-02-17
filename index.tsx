@@ -373,7 +373,7 @@ const App = () => {
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-10">
             <div>
               <h3 className="text-4xl font-black mb-4 tracking-tight text-zinc-900">Let's connect.</h3>
-              <p className="text-zinc-400 text-base max-w-sm">Open for collaborations in HCI and Spatial AI research.</p>
+              <p className="text-zinc-400 text-base max-w-sm">Open for collaborations in HCI and Educational Games research.</p>
             </div>
             <div className="flex flex-col gap-4 items-start md:items-end">
               <a href="mailto:zhutong@alumni.pku.edu.cn" className="text-2xl md:text-3xl font-black text-zinc-900 hover:text-blue-600 transition-all tracking-tight">
