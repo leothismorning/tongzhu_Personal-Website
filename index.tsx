@@ -292,13 +292,13 @@ const App = () => {
           
           <div className="space-y-4 text-base text-zinc-500 leading-relaxed font-medium">
             <p>
-              I am <span className="text-zinc-900 font-bold">Tong Zhu </span>, a Master’s graduate in Computer Technology from <span className="text-zinc-900">Peking University</span>, where I researched AI agent in games under the guidance of <span className="text-blue-600 font-semibold">Prof. Ping Wang</span> and <span className="text-blue-600 font-semibold">Mr. Jie Xu</span>.
+              I am Tong Zhu, a Master’s graduate in Computer Technology from <span className="text-zinc-900">Peking University</span>, where I researched AI agent in games under the guidance of <span className="text-blue-600 font-semibold">Prof. Ping Wang</span> and <span className="text-blue-600 font-semibold">Mr. Jie Xu</span>.
             </p>
             <p>
                I am currently serving as a Remote Research Assistant at the Faculty of Education, <span className="text-zinc-900">The University of Hong Kong</span> , collaborating with <span className="text-blue-600 font-semibold">Prof. Zhichun Liu</span> on AI-Assisted Design and educational games.
             </p>
             <p>
-              My goal is to explore how AI and spatial technology can provide transformative experiences through the lens of Embodied Cognition.
+              My goal is to explore how AI and Immersive Space can provide transformative experiences through the lens of Embodied Cognition.
             </p>
           </div>
 
