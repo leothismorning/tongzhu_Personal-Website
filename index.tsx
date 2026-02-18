@@ -65,7 +65,7 @@ const PROJECTS: Project[] = [
     icon: <Gamepad2 className="w-6 h-6" />,
     tags: ['Unreal Engine', 'C++', 'Mechanics', 'Game Design']
   },
-    {
+  {
     id: 'tsinghua-robot',
     title: 'Cupid-Echo:an inflatable shape changing interface',
     category: 'Tsinghua Future Lab',
@@ -75,7 +75,7 @@ const PROJECTS: Project[] = [
     icon: <HeartPulse className="w-6 h-6" />,
     tags: ['Machine Learning', 'Haptics', 'Robotics', 'Affective Computing']
   },
-    {
+  {
     id: 'hku-archaeology',
     title: 'Virtual-archaeology Game(In Development)',
     category: 'HKU Faculty of Education',
@@ -85,7 +85,7 @@ const PROJECTS: Project[] = [
     icon: <BookOpen className="w-6 h-6" />,
     tags: ['EdTech', 'Educational Games', 'Spatial Computing', 'Pedagogy']
   },
-    {
+  {
     id: 'serious-space',
     title: 'Serious Space',
     category: 'Research Concept',
@@ -168,7 +168,8 @@ const INDUSTRY_EXPERIENCES: Experience[] = [
 const ExperienceCard: React.FC<{ exp: Experience }> = ({ exp }) => (
   <div className="group p-6 rounded-2xl bg-white border border-zinc-100 hover:border-blue-100 transition-all duration-300 h-full">
     <div className="flex items-start gap-4">
-      <div className="w-10 h-10 rounded-xl bg-zinc-50 flex items-center justify-center text-zinc-400 group-hover:bg-blue-600 group-hover:text-white transition-all shadow-sm shrink-0">
+      {/* Icon container: Removed group-hover color changes */}
+      <div className="w-10 h-10 rounded-xl bg-zinc-50 flex items-center justify-center text-zinc-400 shadow-sm shrink-0 border border-zinc-100/50">
         {exp.icon}
       </div>
       <div className="flex-1">
@@ -238,8 +239,8 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => (
 const App = () => {
   return (
     <div className="min-h-screen bg-[#fafafa] text-zinc-800">
-      {/* 1. Hero Section with PKU Background (Padding adjusted as Navbar is removed) */}
-      <header className="relative pt-24 pb-24 px-6 overflow-hidden border-b border-zinc-50">
+      {/* 1. Hero Section */}
+      <header className="relative pt-24 pb-16 px-6 overflow-hidden border-b border-zinc-50">
         <div className="absolute inset-0 z-0">
           <img 
             src="https://pub-44bbe4813e3c492a92c15ad2f4fccbd0.r2.dev/pekinguniversity.jpeg" 
@@ -274,7 +275,7 @@ const App = () => {
       </header>
 
       {/* 2. About Section */}
-      <section id="about" className="max-w-6xl mx-auto px-6 py-24 grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+      <section id="about" className="max-w-6xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
         <div className="md:col-span-4">
           <div className="aspect-[3/4] rounded-3xl overflow-hidden bg-zinc-100 shadow-xl border-4 border-white">
             <img 
@@ -315,19 +316,19 @@ const App = () => {
       </section>
 
       {/* 3. Categorized Career Timeline */}
-      <section id="experience" className="bg-zinc-50 py-2 border-y border-zinc-100">
+      <section id="experience" className="bg-zinc-50 py-12 border-y border-zinc-100">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="mb-16">
+          <div className="mb-10">
             <span className="text-blue-600 font-black uppercase tracking-widest text-[10px]">Academic & Professional</span>
             <h2 className="text-4xl font-black tracking-tight text-zinc-900 mt-2">Experience</h2>
           </div>
           
-          {/* Research Experience (First 3) */}
-          <div className="mb-20">
-            <div className="flex items-center gap-3 mb-10">
-              <div className="h-px flex-1 bg-zinc-200" />
-              <h3 className="text-[11px] font-black uppercase tracking-[0.3em] text-zinc-400 whitespace-nowrap">Research Experience</h3>
-              <div className="h-px flex-1 bg-zinc-200" />
+          {/* Research Experience */}
+          <div className="mb-16">
+            <div className="flex items-center gap-3 mb-8">
+              <div className="h-px flex-1 bg-zinc-200/60" />
+              <h3 className="text-[11px] font-black uppercase tracking-[0.3em] text-zinc-400 whitespace-nowrap px-4">Research Experience</h3>
+              <div className="h-px flex-1 bg-zinc-200/60" />
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {RESEARCH_EXPERIENCES.map((exp, i) => (
@@ -336,12 +337,12 @@ const App = () => {
             </div>
           </div>
 
-          {/* Industry Experience (Last 2) */}
+          {/* Industry Experience */}
           <div>
-            <div className="flex items-center gap-3 mb-10">
-              <div className="h-px flex-1 bg-zinc-200" />
-              <h3 className="text-[11px] font-black uppercase tracking-[0.3em] text-zinc-400 whitespace-nowrap">Industry Internships</h3>
-              <div className="h-px flex-1 bg-zinc-200" />
+            <div className="flex items-center gap-3 mb-8">
+              <div className="h-px flex-1 bg-zinc-200/60" />
+              <h3 className="text-[11px] font-black uppercase tracking-[0.3em] text-zinc-400 whitespace-nowrap px-4">Industry Internships</h3>
+              <div className="h-px flex-1 bg-zinc-200/60" />
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {INDUSTRY_EXPERIENCES.map((exp, i) => (
@@ -353,8 +354,8 @@ const App = () => {
       </section>
 
       {/* 4. Portfolio Works Grid */}
-      <section id="works" className="max-w-6xl mx-auto px-6 py-24 bg-white">
-        <div className="mb-16">
+      <section id="works" className="max-w-6xl mx-auto px-6 py-20 bg-white">
+        <div className="mb-12">
           <span className="text-blue-600 font-black uppercase tracking-widest text-[10px]">Research & Projects</span>
           <h2 className="text-4xl font-black tracking-tight text-zinc-900 mt-2">Selected Works</h2>
           <p className="text-zinc-400 text-sm mt-3 font-medium">Click on project cards to explore detailed demonstrations, videos, or presentations.</p>
@@ -368,7 +369,7 @@ const App = () => {
       </section>
 
       {/* 5. Footer */}
-      <footer id="contact" className="py-24 border-t border-zinc-100 bg-[#fafafa]">
+      <footer id="contact" className="py-20 border-t border-zinc-100 bg-[#fafafa]">
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-10">
             <div>
@@ -387,7 +388,7 @@ const App = () => {
             </div>
           </div>
           
-          <div className="mt-24 pt-8 border-t border-zinc-200/50 flex flex-col md:flex-row justify-between items-center gap-4 text-[9px] font-bold text-zinc-400 tracking-widest uppercase">
+          <div className="mt-20 pt-8 border-t border-zinc-200/50 flex flex-col md:flex-row justify-between items-center gap-4 text-[9px] font-bold text-zinc-400 tracking-widest uppercase">
             <p>© 2026 Tong Zhu · Portfolio</p>
             <div className="flex gap-8">
               <a href="#" className="hover:text-zinc-900">Powered by Passion, Guided by Integrity.</a>
